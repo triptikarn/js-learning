@@ -1,3 +1,7 @@
+// Named Function 
+//A named function is a function declared with an identifier, allowing it to be reused and called whenever needed.
+
+
 // // 1. addition
 function add(a,b){
     return(a+b);
