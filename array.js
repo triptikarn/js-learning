@@ -100,3 +100,21 @@ console.log(arr);
 //  arr.push(55,66,22);
 
 // arr.pop();
+
+
+// prototype array 
+let arr1  = [1,2,3,4,5,6];
+
+let arr2 = [3,4,5,6,7,8];
+
+arr1.klm = function(){
+   console.log("This is arr");
+   
+}
+
+// console.log(arr1.at(2));
+
+Array.prototype.klm = function(){
+  console.log("This is arr")
+   
+}
