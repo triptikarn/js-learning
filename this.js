@@ -118,3 +118,23 @@ A.callback();
     }
 }
  A.callback();                         
+
+
+ // Qno 7 
+this.name = "Gaurav Raj";
+ const A = {
+    name : "Gaurav",
+   callback1 : function(){
+       console.log(this.name);
+        
+    },
+
+    callback2 : ()=>{
+       console.log(this.name);
+        
+    }
+ }
+ A.callback1();
+ A.callback2();
+
+//------------------------------------------------
