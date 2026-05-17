@@ -89,3 +89,16 @@ const A = {
 
 //--------------------------------------
 
+// Q.no 5 
+ const A = {
+    name : "Gaurav",
+    callback: function(){
+        arrow=()=>{
+            console.log(this);
+            
+      }
+       arrow();
+    }
+
+}
+A.callback();
