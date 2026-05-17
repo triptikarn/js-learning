@@ -102,3 +102,19 @@ const A = {
 
 }
 A.callback();
+
+
+//-------------------------------------
+// Q.6
+
+ const A = {
+    name : "Gaurav",
+    callback:function(){
+       arrow=()=>{
+             console.log(this.name);
+            
+         }
+         arrow()
+    }
+}
+ A.callback();                         
