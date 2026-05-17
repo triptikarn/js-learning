@@ -138,3 +138,50 @@ this.name = "Gaurav Raj";
  A.callback2();
 
 //------------------------------------------------
+
+
+// Q no 8 
+ this.name = "Gaurav Raj";
+ const A = {
+    name : "Gaurav" , 
+
+    callback1 : function(){
+        function abc(){
+            console.log(this.name);
+            
+        }
+        abc();
+    }
+ }
+A.callback1();  //*********
+
+// ---------------------------------------
+  //Q no 9 
+  this.name = "Gaurav Raj";
+ const A = {
+    name : "Gaurav",
+    callback1:function(){
+        abc=()=>{
+            console.log(this.name);
+            
+         }
+         abc();
+     }
+  }
+A.callback1();
+
+//--------------------------------------------
+
+// Q.no 10 
+ var roll = 7;
+  function callnotchild(){
+    console.log(this.roll);
+    
+ }
+  const A = {
+   roll : 1,
+    parent : function(notchild){
+       notchild();
+    }
+ }                                         //***************
+ A.parent(callnotchild);
