@@ -76,3 +76,16 @@ const A = {
  }
   A.callback();
 
+
+//Q no 4 
+//In arrow function call global scope not local scope .
+ const A = {
+     name : "Gaurav",
+     callback : ()=>{
+         console.log(this);
+             }
+ }
+ A.callback();
+
+//--------------------------------------
+
