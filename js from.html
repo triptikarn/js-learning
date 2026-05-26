@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f1f1f1;
+        }
+
+        .container{
+            width: 700px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            gap:30px;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0,0,0.2);
+        }
+
+        .left{
+            width: 50%;
+        }
+
+        .right img{
+            width: 250px;
+            height:250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border:2px solid #ddd;
+        }
+
+        input{
+            width:100%;
+            padding: 12px;
+            border:1px solid #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <input type="file" id="file">
+        </div>
+
+        <div class="right">
+            <img id="preview" src="">
+        </div>
+    </div>
+
+    <script>
+
+    let fileInput = document.getElementById("file");
+    let preview = document.getElementById("preview");
+
+    fileInput.addEventListener("change", (e) => {
+
+        let file = e.target.files[0];
+
+        if(file){
+
+            let imageURL = URL.createObjectURL(file);
+
+            preview.src = imageURL;
+        }
+    });
+    
+    </script>
+</body>
+</html>
